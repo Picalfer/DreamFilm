@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Dream Film</string>
-    <string name="poster_link">Источник постеров: https://www.movieposters.com/</string>
+    <string name="poster_link">Poster Source: https://www.movieposters.com/</string>
+    <string name="menu">Menu</string>
+    <string name="favorites">Favorites</string>
+    <string name="watch_later">Watch later</string>
+    <string name="selections">Selections</string>
+    <string name="settings">Settings</string>
 </resources>
