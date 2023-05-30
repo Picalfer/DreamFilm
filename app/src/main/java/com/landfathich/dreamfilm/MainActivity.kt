@@ -14,25 +14,40 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        binding.btnMenu.setOnClickListener {
-            Toast.makeText(this, "Menu", Toast.LENGTH_SHORT).show()
+        initNavigation()
+    }
+
+    private fun initNavigation() {
+        binding.topAppBar.setOnMenuItemClickListener {
+            when (it.itemId) {
+                R.id.settings -> {
+                    Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show()
+                    true
+                }
+
+                else -> false
+            }
         }
 
-        binding.btnFavorites.setOnClickListener {
-            Toast.makeText(this, "Favorites", Toast.LENGTH_SHORT).show()
-        }
+        binding.bottomNavigation.setOnItemSelectedListener {
+            when (it.itemId) {
+                R.id.favorites -> {
+                    Toast.makeText(this, "Favorites", Toast.LENGTH_SHORT).show()
+                    true
+                }
 
-        binding.btnSelections.setOnClickListener {
-            Toast.makeText(this, "Selections", Toast.LENGTH_SHORT).show()
-        }
+                R.id.watch_later -> {
+                    Toast.makeText(this, "Watch later", Toast.LENGTH_SHORT).show()
+                    true
+                }
 
-        binding.btnWatchLater.setOnClickListener {
-            Toast.makeText(this, "Watch later", Toast.LENGTH_SHORT).show()
-        }
+                R.id.selections -> {
+                    Toast.makeText(this, "Selections", Toast.LENGTH_SHORT).show()
+                    true
+                }
 
-        binding.btnSettings.setOnClickListener {
-            Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show()
+                else -> false
+            }
         }
-
     }
 }
