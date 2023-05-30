@@ -70,14 +70,17 @@
     <TextView
         android:id="@+id/disclaimer"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:autoLink="web"
         android:background="#DCDADA"
+        android:gravity="center"
         android:linksClickable="true"
         android:padding="5dp"
         android:text="@string/poster_link"
-        app:layout_constraintEnd_toEndOf="@+id/top_bar"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/top_bar" />
 
@@ -85,6 +88,7 @@
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#656565"
         app:itemIconTint="@drawable/bottom_nav_color"
         app:itemTextColor="@drawable/bottom_nav_color"
         app:labelVisibilityMode="labeled"
