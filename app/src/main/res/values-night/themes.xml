@@ -2,6 +2,8 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.DreamFilm" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">#114670</item>
+        <item name="colorSecondary">#5E3211</item>
+        <item name="colorOutline">#008750</item>
     </style>
 </resources>
