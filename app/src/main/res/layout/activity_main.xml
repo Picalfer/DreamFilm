@@ -30,7 +30,7 @@
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:layout_margin="10dp"
-        android:backgroundTint="#656565"
+        android:backgroundTint="@color/contrast_color_main"
         android:elevation="10dp"
         app:cardCornerRadius="15dp"
         app:layout_constraintTop_toBottomOf="@id/top_app_bar">
@@ -95,8 +95,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:layoutAnimation="@anim/appear_poster_layout_anim"
         android:columnCount="2"
+        android:layoutAnimation="@anim/appear_poster_layout_anim"
         android:orientation="horizontal"
         android:useDefaultMargins="true"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
@@ -108,6 +108,9 @@
             android:id="@+id/poster1"
             android:layout_width="130dp"
             android:layout_height="170dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:stateListAnimator="@animator/press_btn_animator"
             app:cardCornerRadius="15dp">
 
             <ImageView
@@ -121,6 +124,9 @@
             android:id="@+id/poster2"
             android:layout_width="130dp"
             android:layout_height="170dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:stateListAnimator="@animator/press_btn_animator"
             app:cardCornerRadius="15dp">
 
             <ImageView
@@ -134,6 +140,9 @@
             android:id="@+id/poster3"
             android:layout_width="130dp"
             android:layout_height="170dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:stateListAnimator="@animator/press_btn_animator"
             app:cardCornerRadius="15dp">
 
             <ImageView
@@ -147,6 +156,9 @@
             android:id="@+id/poster4"
             android:layout_width="130dp"
             android:layout_height="170dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:stateListAnimator="@animator/press_btn_animator"
             app:cardCornerRadius="15dp">
 
             <ImageView
@@ -164,7 +176,7 @@
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#656565"
+        android:background="@color/contrast_color_main"
         app:itemIconTint="@drawable/bottom_nav_color"
         app:itemTextColor="@drawable/bottom_nav_color"
         app:labelVisibilityMode="labeled"

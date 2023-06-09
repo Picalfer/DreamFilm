@@ -6,8 +6,13 @@
     <color name="soft_blue">#68B5F1</color>
     <color name="dark_blue">#154A73</color>
 
+    <color name="non_active_btn">#68B5F1</color>
+    <color name="active_btn">#FF7070</color>
+
     <color name="end_color_bg">#79CCFA</color>
     <color name="start_color_bg">#82FF7E</color>
 
     <color name="title_color">#000000</color>
+
+    <color name="contrast_color_main">#656565</color>
 </resources>

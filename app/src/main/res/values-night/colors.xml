@@ -3,5 +3,10 @@
     <color name="end_color_bg">#321485</color>
     <color name="start_color_bg">#653B06</color>
 
+    <color name="non_active_btn">#505050</color>
+    <color name="active_btn">#1B1A1A</color>
+
     <color name="title_color">#FFFFFF</color>
+
+    <color name="contrast_color_main">#FB7813</color>
 </resources>
